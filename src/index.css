@@ -1,0 +1,17 @@
+.narrow { max-width: 420px; padding-top: 10vh; }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.actions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.actions > * { width: auto !important; margin-bottom: 0 !important; }
+.error { color: var(--pico-del-color); }
+.notice { color: var(--pico-ins-color); }
+.pre { white-space: pre-wrap; }
+button.small { padding: 0.2rem 0.6rem; font-size: 0.85rem; }
+.fields { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1.5rem; }
+.fields dt { color: var(--pico-muted-color); }
+.fields dd { margin: 0; }
+.badge { display: inline-block; padding: 0.1rem 0.6rem; border-radius: 1rem; font-size: 0.85rem; white-space: nowrap; color: #1b1b1b; }
+.badge-new { background: #dbe4ff; }
+.badge-in_progress { background: #fff3bf; }
+.badge-review { background: #e5dbff; }
+.badge-accepted { background: #d3f9d8; }
+.badge-rework { background: #ffe3e3; }
