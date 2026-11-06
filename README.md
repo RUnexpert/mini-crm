@@ -99,5 +99,6 @@ npx supabase start
 
 Сборка статическая. Маршруты на `HashRouter`, `base: './'`, поэтому подходит любой хостинг без настройки rewrites.
 
+- **GitHub Pages (используется сейчас):** workflow `.github/workflows/pages.yml` собирает и публикует сайт при каждом пуше в `main`. Публичные `VITE_SUPABASE_URL` и `VITE_SUPABASE_ANON_KEY` хранятся в Settings → Secrets and variables → Actions → **Variables**. Включение: Settings → Pages → Source: GitHub Actions.
 - **Vercel / Netlify:** импортируйте репозиторий. Build command: `npm run build`, output: `dist`. В Environment Variables задайте **только** `VITE_SUPABASE_URL` и `VITE_SUPABASE_ANON_KEY`.
 - **Вручную:** `npm run build`, затем загрузите `dist/` на любой статический хостинг.
